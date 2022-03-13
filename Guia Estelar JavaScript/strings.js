@@ -8,7 +8,6 @@
     `` -> template literals ou template strings
 */
 
-
 console.log('Strings com aspas simples')
 console.log("Strings com aspas duplas")
 console.log(`Strings com template strings
