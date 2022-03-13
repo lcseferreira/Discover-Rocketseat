@@ -1,0 +1,1 @@
+console.log("Começando os estudos em JS")
