@@ -8,6 +8,5 @@
     -> var
     -> let
     -> const
-
 */
 

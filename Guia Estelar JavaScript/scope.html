@@ -1,0 +1,11 @@
+<script>
+    // var é global e local
+    console.log("> existe x antes do bloco?", x)
+
+    {
+        // processo de hoisting -> passa o var pra cima
+        var x = 0;
+    }
+
+    console.log("-> existe x depois do bloco?", x)
+</script>
