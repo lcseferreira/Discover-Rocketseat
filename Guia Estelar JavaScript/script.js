@@ -1,14 +1,13 @@
 /*
-    Array (Vetores)
-        -> Lista
-        -> Agrupamento de dados
+    Variáveis
+        -> nomes simbólicos para receber algum valor
+        -> atalhos de código
+        -> identificadores
     
-    ["Lucas", "Eduardo"]
+    Existem 3 palavras reservadas para criar uma variável:
+    -> var
+    -> let
+    -> const
+
 */
 
-console.log([
-    "Lucas",
-    "Eduardo",
-    "Renata",
-    "Lara"
-])
