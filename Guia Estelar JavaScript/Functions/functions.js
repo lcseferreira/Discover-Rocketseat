@@ -1,20 +1,21 @@
-// Callback function
+/*
+    Constructor function
 
-function sayMyName(aName) {
-    console.log("antes de executar a função");
+        => new expression
+        => create a new object
+        => this keyword
+*/
 
-    aName();
-
-    function testCallback() {
-        console.log("dentro de outro callback");
+// Constructor function
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+    this.walk = () => {
+        console.log(`${this.name} está andando...`)
     }
-
-    testCallback();
 }
 
-// Callback é uma função que está sendo passada como parâmetro para outra função
-sayMyName(
-    () => { // Passando uma função como argumento
-        console.log("estou em uma callback");
-    }
-)
+// Creating a new object (instânciando um novo objeto)
+const person = new Person("Lucas", 24);
+console.log(person);
+person.walk();
