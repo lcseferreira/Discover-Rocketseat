@@ -1,14 +1,7 @@
-console.log("Aula sobre Functions!");
+// Função anônima (function expression, function anonymous)
+const sum = function (number1, number2) { // parâmetros (parameters)
+    return number1 + number2;
+}
 
-// Ideia: criar um app de frases motivacionais
-// Fase 1 => declaração da função - function declaration
-function createPhrases() {
-    console.log("Estudar é muito bom!");
-    console.log("Estudar é muito bom!");
-    console.log("Estudar é muito bom!");
-} // Esse bloco de código é guardado em memória
-
-// Fase 2 => executar a função - execute, call, run, invoke 
-createPhrases();
-
-console.log("Fim do programa!");
+// Passando argumentos (arguments) para a função
+console.log(`Função soma ${sum(4, 7)}`);
