@@ -1,12 +1,5 @@
-// Function hoisting
-sayMyName();
+// Arrow function
 
-function sayMyName() {
+const sayMyName = () => {
     console.log("Lucas");
-}
-
-testHoisting();
-
-var testHoisting = function () { // Error: o JS entende o testHoisting como uma variável, e não função
-    console.log("Testing...");
 }
