@@ -1,21 +1,12 @@
-// Function scope
-let subject = "create video";
+// Function hoisting
+sayMyName();
 
-function createThink(subject) {
-    subject = "study";
-    return subject;
+function sayMyName() {
+    console.log("Lucas");
 }
 
-console.log(subject); // global scope
-console.log(createThink(subject)); // function scope
+testHoisting();
 
-subject = "create music";
-
-function createThinkWithoutParameter() {
-    subject = "create a new code";
-    return subject;
+var testHoisting = function () { // Error: o JS entende o testHoisting como uma variável, e não função
+    console.log("Testing...");
 }
-
-console.log(subject); 
-console.log(createThinkWithoutParameter(subject)); // modifying the variable
-console.log(subject); 
