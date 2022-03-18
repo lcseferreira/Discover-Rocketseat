@@ -1,7 +1,21 @@
-// Função anônima (function expression, function anonymous)
-const sum = function (number1, number2) { // parâmetros (parameters)
-    return number1 + number2;
+// Function scope
+let subject = "create video";
+
+function createThink(subject) {
+    subject = "study";
+    return subject;
 }
 
-// Passando argumentos (arguments) para a função
-console.log(`Função soma ${sum(4, 7)}`);
+console.log(subject); // global scope
+console.log(createThink(subject)); // function scope
+
+subject = "create music";
+
+function createThinkWithoutParameter() {
+    subject = "create a new code";
+    return subject;
+}
+
+console.log(subject); 
+console.log(createThinkWithoutParameter(subject)); // modifying the variable
+console.log(subject); 
