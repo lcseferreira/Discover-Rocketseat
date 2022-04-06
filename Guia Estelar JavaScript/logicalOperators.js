@@ -16,6 +16,6 @@ else console.log("Not OK");
 if (bread && cheese || eggs) console.log("OK");
 else console.log("Not OK");
 
-// NOT ||
+// NOT !
 if (bread && cheese && !eggs) console.log("OK");
 else console.log("Not OK");

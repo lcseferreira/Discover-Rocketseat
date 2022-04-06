@@ -16,7 +16,7 @@ console.log(NaN ? "true" : "false");
 
 /* 
 
-    TRUTH 
+    TRUTHY
     
     -> Quando um valor é considerado true em contextos onde um booleano é obrigatório
 
