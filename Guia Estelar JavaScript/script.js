@@ -1,28 +1,32 @@
 /*
 
-    if ... else
-    se ... senão
+    switch case
 
 */
 
-let temperature = 37.2;
-
-if (temperature >= 37) console.log("Fever");
-else console.log("Healthy");
-
-if (temperature >= 37) {
-    console.log("Fever");
-} else {
-    console.log("Healthy");
-}
-
-let highTemperature = temperature >= 37.5;
-let mediumTemperature = temperature >= 37;
-
-if (highTemperature) {
-    console.log("Fever");
-} else if (mediumTemperature) {
-    console.log("Alert")
-} else {
-    console.log("Healthy");
+switch (4) {
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Thursday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        break;
+    case 4:
+        console.log("Tuesday");
+        break;
+    case 5:
+        console.log("Friday");
+        break;
+    case 6:
+        console.log("Saturday");
+        break;
+    case 7:
+        console.log("Sunday");
+        break;
+    default:
+        console.log("Error");
+        break;
 }
