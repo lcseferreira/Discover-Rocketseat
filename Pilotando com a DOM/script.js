@@ -30,3 +30,6 @@ document.querySelector("p#innertxt").innerText = "Modificando através do innert
 
 document.querySelector("p#innerhtml").innerHTML = "Modificando através do <strong>innerhtml<strong>";
 
+// value
+console.log(document.querySelector("input").value);
+document.querySelector("input").value = "Hello!";
