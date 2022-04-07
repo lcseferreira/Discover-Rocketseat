@@ -33,3 +33,16 @@ document.querySelector("p#innerhtml").innerHTML = "Modificando através do <stro
 // value
 console.log(document.querySelector("input").value);
 document.querySelector("input").value = "Hello!";
+
+// settando atributos
+const header = document.querySelector("header");
+header.setAttribute("id", "headerID");
+
+// getting atributos
+const headerID = document.querySelector("header#headerID");
+console.log(headerID);
+console.log(headerID.getAttribute("id"));
+
+// removendo atributos
+header.removeAttribute("class");
+console.log(header.getAttributeNames());
