@@ -13,6 +13,11 @@ console.log(element2b);
 const element3 = document.getElementsByTagName("p")[0];
 console.log(element3);
 
-// Pegando um elementos pela query selector
+// Pegando um elemento pela query selector
 const element4 = document.querySelector("p#queryslc");
 console.log(element4);
+
+// NodeList
+const elements = document.querySelectorAll("#queryslc");
+
+elements.forEach(el => console.log(el));
