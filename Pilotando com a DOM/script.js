@@ -21,3 +21,12 @@ console.log(element4);
 const elements = document.querySelectorAll("#queryslc");
 
 elements.forEach(el => console.log(el));
+
+// text content
+document.querySelector("p#textcontent").textContent = "Modificando através do textContent";
+
+// innerText e innerHTML
+document.querySelector("p#innertxt").innerText = "Modificando através do innertxt";
+
+document.querySelector("p#innerhtml").innerHTML = "Modificando através do <strong>innerhtml<strong>";
+
