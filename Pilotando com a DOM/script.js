@@ -1,23 +1,15 @@
-// Navegando pelos elementos
-// parentNode parentElement
-const h1 = document.querySelector("h1");
+// Criando e adicionando elementos
 
-console.log(h1.parentNode);
-console.log(h1.parentElement);
+// createElement
+const div = document.createElement("div");
+div.innerText = "Hello, I'm a div";
 
-// childNodes children
+// append prepend
 const header = document.querySelector("header");
-console.log(header.childNodes);
-console.log(header.children);
-console.log(header.children[0]);
-console.log(header.children[1]);
-console.log(header.firstChild);
-console.log(header.firstElementChild);
-console.log(header.lastChild);
-console.log(header.lastElementChild);
+// header.append(div);
+// header.prepend(div);
 
-// nextSibling nextElementSibling
-console.log(header.nextSibling);
-console.log(header.nextElementSibling);
-console.log(header.previousSibling);
-console.log(header.previousElementSibling);
+// insertBefore
+const body = document.querySelector("body");
+const script = body.querySelector("script");
+body.insertBefore(div, script);
