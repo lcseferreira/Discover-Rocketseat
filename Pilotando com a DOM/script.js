@@ -1,15 +1,16 @@
-// Criando e adicionando elementos
+// Events
 
-// createElement
-const div = document.createElement("div");
-div.innerText = "Hello, I'm a div";
+function print() {
+    console.log("Hello!");
+}
 
-// append prepend
-const header = document.querySelector("header");
-// header.append(div);
-// header.prepend(div);
+const input = document.querySelector("input");
 
-// insertBefore
-const body = document.querySelector("body");
-const script = body.querySelector("script");
-body.insertBefore(div, script);
+input.onkeydown = function () {
+    console.log("rodei");
+}
+
+const h1 = document.querySelector("h1");
+
+h1.addEventListener("click", () => console.log("Event Listener"));
+
