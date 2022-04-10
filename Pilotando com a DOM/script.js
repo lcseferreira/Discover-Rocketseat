@@ -1,16 +1,13 @@
-// Events
+const buttonOpenModal = document.querySelector("button#openModal");
+const divModalWrapper = document.querySelector("div.modal-wrapper");
 
-function print() {
-    console.log("Hello!");
-}
+buttonOpenModal.addEventListener("click", () => divModalWrapper.classList.remove("invisible"));
 
-const input = document.querySelector("input");
+document.addEventListener("keydown", function (event) {
+    const isEscKey = event.key === "Escape";
+    const containsInvisible = divModalWrapper.classList.contains("invisible");
 
-input.onkeydown = function () {
-    console.log("rodei");
-}
-
-const h1 = document.querySelector("h1");
-
-h1.addEventListener("click", () => console.log("Event Listener"));
-
+    if (isEscKey && !containsInvisible) {
+        divModalWrapper.classList.add("invisible")
+    };
+});
